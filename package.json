@@ -1,0 +1,33 @@
+{
+  "name": "graph-ts",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "rimraf dist && tsc && rollup -c rollup.config.js",
+    "dev": "rollup -w -c rollup.config.dev.js --port 5501"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@tweenjs/tween.js": "^21.0.0",
+    "@types/d3": "^7.4.3",
+    "bezier-js": "^6.1.4",
+    "d3": "^7.8.5",
+    "tinycolor2": "^1.6.0"
+  },
+  "devDependencies": {
+    "@open-wc/building-rollup": "^3.0.2",
+    "@rollup/plugin-commonjs": "^25.0.7",
+    "@rollup/plugin-terser": "^0.4.4",
+    "@rollup/plugin-typescript": "^11.1.6",
+    "deepmerge": "^4.3.1",
+    "rimraf": "^5.0.5",
+    "rollup": "^3.10.0",
+    "rollup-plugin-postcss": "^4.0.2",
+    "typescript": "^5.3.3"
+  }
+}
